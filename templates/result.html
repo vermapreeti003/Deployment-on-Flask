@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Brain Weight Predictor
+        </title>
+        <style>
+            .container{
+                padding: 25px;
+                background-color: lightgreen;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <div class="container">
+                <h1>
+                    Prediction
+                </h1>
+                <form action="{{url_for('index')}}">
+                    <br>
+                    {{gender}}
+                    <br>
+                    {{age}}
+                    <br>
+                    {{head_size}}
+                    <br>
+                    <br>
+                    <input type="submit" class="btn btn-primary btn-block btn-Large" value="Home" />
+                    <br>
+                    <br>
+                    {{ prediction_text }}
+                </form>
+            </div>
+        </center>
+    </body>
+</html>
